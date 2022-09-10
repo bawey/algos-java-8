@@ -1,4 +1,4 @@
-package fr.bawej;
+package fr.free.bawej;
 
 public class FrogJump {
     public int solution(int x, int y, int d) {

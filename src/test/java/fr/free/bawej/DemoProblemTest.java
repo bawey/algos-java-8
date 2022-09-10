@@ -1,4 +1,4 @@
-package fr.bawej;
+package fr.free.bawej;
 
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.params.ParameterizedTest;

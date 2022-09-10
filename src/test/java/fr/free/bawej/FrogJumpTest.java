@@ -1,4 +1,4 @@
-package fr.bawej;
+package fr.free.bawej;
 
 import lombok.RequiredArgsConstructor;
 import org.assertj.core.api.Assertions;

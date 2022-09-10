@@ -1,4 +1,4 @@
-package fr.bawej;
+package fr.free.bawej;
 
 import java.util.HashSet;
 import java.util.Set;

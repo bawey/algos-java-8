@@ -1,4 +1,4 @@
-package fr.bawej;
+package fr.free.bawej;
 
 public class BinaryGap {
     public int solution(int n){
