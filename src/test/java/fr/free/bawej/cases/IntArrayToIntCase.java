@@ -16,7 +16,8 @@ public class IntArrayToIntCase {
      * @return {@link IntArrayToIntCase} instance wrapping the test data and expected answer
      */
     public static IntArrayToIntCase fromString(String input) {
-        List<Integer> ints = Arrays.stream(input.split("(,|:)")).sequential().map(Integer::parseInt).collect(Collectors.toList());
+        List<Integer> ints = Arrays.stream(input.split("(:|,)")).sequential().map(String::trim)
+                .filter(s -> !s.isEmpty()).map(Integer::parseInt).collect(Collectors.toList());
         return new IntArrayToIntCase(ints.subList(0, ints.size() - 1).stream().mapToInt(Integer::intValue).toArray(), ints.get(ints.size() - 1));
     }
 
