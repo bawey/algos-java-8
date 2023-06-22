@@ -2,7 +2,7 @@ package fr.free.bawej;
 
 import java.util.Arrays;
 
-public class RomanToArabic {
+public class RomanIntegerParser {
 
     private static final char[] symbols = {'C', 'D', 'I', 'L', 'M', 'V', 'X'};
     private static final int[] values = {100, 500, 1, 50, 1000, 5, 10};

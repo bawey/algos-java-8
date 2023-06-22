@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
-class RomanToArabicTest {
+class RomanIntegerParserTest {
 
     static Stream<Arguments> provideArguments() {
         return Stream.of(
@@ -28,13 +28,13 @@ class RomanToArabicTest {
     @ParameterizedTest
     @MethodSource("provideArguments")
     void testConversion(int expected, String input) {
-        assertThat(new RomanToArabic().romanToInt(input)).isEqualTo(expected);
+        assertThat(new RomanIntegerParser().romanToInt(input)).isEqualTo(expected);
     }
 
     @ParameterizedTest
     @ValueSource(strings = {"IIX", "IVX"})
     void testDetectingInvalidLiterals(String input) {
-        assertThatThrownBy(() -> new RomanToArabic().romanToInt(input)).isInstanceOf(IllegalArgumentException.class);
+        assertThatThrownBy(() -> new RomanIntegerParser().romanToInt(input)).isInstanceOf(IllegalArgumentException.class);
     }
 
 
